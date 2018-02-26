@@ -1,6 +1,6 @@
 var $ = jQuery;
 
-jQuery(document).ready(function($) {  
+jQuery(document).ready(function($) {
 
     $(window).load(function(){
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
@@ -14,7 +14,7 @@ var $ = jQuery;
 var vidWidth = $(window).width(), vidHeight = $(window).height();
 
 $("#video-wrap").css({
-    
+
     'height': vidHeight
 });
 
@@ -41,9 +41,9 @@ new WOW().init();
 // Count Down Timer
 
 $('.countdown').final_countdown({
-    start : 1360000000, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website. 
-    end   : 1390000000,
-    now : 1385000000,
+    start : 1519671861, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website.
+    end   : 1530403199,
+    now : 1519671861,
 seconds: {
 borderColor: '#5677fc',
 borderWidth: '3'
@@ -69,7 +69,7 @@ days: {
 
     var quotes = $(".quotes");
     var quoteIndex = -1;
-    
+
     function showNextQuote() {
         ++quoteIndex;
         quotes.eq(quoteIndex % quotes.length)
@@ -77,9 +77,9 @@ days: {
             .delay(1000)
             .fadeOut(1000, showNextQuote);
     }
-    
+
     showNextQuote();
-    
+
 })();
 
 // smooth mouse wheel
